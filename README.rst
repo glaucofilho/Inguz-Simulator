@@ -3,7 +3,7 @@
 Python Template Repository
 ==========================
 
-This repository gives a fully-featured template or skeleton for new Python repositories.
+python -m pytest --cov=inguz_simulator --cov-report term --cov-report xml --cov-config .coveragerc --junitxml=testresults.xml
 
 
 
