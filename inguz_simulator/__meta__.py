@@ -4,7 +4,7 @@ name = "Inguz-Simulator"
 path = name.lower().replace("-", "_").replace(" ", "_")
 # Your version number should follow https://python.org/dev/peps/pep-0440 and
 # https://semver.org
-version = "0.1.dev0"
+version = "v0.0.1"
 author = "Glauco Lauria Marques Filho"
 author_email = "glaucolmf@hotmail.com"
 description = "Complete Simulator Software"  # One-liner

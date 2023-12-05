@@ -1,2 +1,4 @@
-numpy>=1.5.1
+numpy
+pandas
+pvlib
 scipy
