@@ -24,7 +24,7 @@ REPO_DIR = os.path.dirname(DOCS_DIR)
 
 sys.path.insert(0, REPO_DIR)
 
-from package_name import __meta__ as meta  # noqa: E402 isort:skip
+from inguz_simulator import __meta__ as meta  # noqa: E402 isort:skip
 
 
 # -- Project information -----------------------------------------------------
@@ -281,7 +281,13 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, project + ".tex", project + " Documentation", meta.author, "manual"),
+    (
+        master_doc,
+        project + ".tex",
+        project + " Documentation",
+        meta.author,
+        "manual",
+    ),
 ]
 
 
@@ -336,7 +342,10 @@ epub_exclude_files = ["search.html"]
 # Common intersphinx mappings can be found here:
 # https://gist.github.com/bskinn/0e164963428d4b51017cebdb6cda5209
 intersphinx_mapping = {
-    "python": ("https://docs.python.org/{.major}".format(sys.version_info), None),
+    "python": (
+        "https://docs.python.org/{.major}".format(sys.version_info),
+        None,
+    ),
     "attrs": ("https://www.attrs.org/en/stable/", None),
     "numpy": ("https://numpy.org/doc/stable/", None),
     "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
